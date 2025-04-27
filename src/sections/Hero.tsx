@@ -29,13 +29,13 @@ const Hero = () => {
             </button>
           </form>
         </div>
-        <div className="absolute -bottom-32 right-3 w-[213.13px] h-[319.7px]">
+        <div className="hero-img-container">
           <img
             src="/background.png"
             alt="Hero"
             width={2729}
             height={4096}
-            className=" object-cover rotate-[18.506deg]"
+            className="hero-img"
           />
         </div>
       </div>

@@ -171,6 +171,10 @@
   }
 
   .service-card {
-    @apply flex flex-col gap-2 p-6 border border-blue-gray-500 rounded-[40px];
+    @apply flex flex-col gap-2 p-6 border border-blue-gray-500 rounded-[40px] bg-white;
+  }
+
+  .service-card:hover {
+    @apply shadow-md;
   }
 }

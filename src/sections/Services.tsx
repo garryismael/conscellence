@@ -18,7 +18,7 @@ const services = [
 const Services = () => {
   return (
     <section className="wrapper">
-      <div className="pt-24">
+      <div className="pt-24 pb-4">
         <h2 className="h2 text-center text-blue-gray-900">
           Are You Running Into These Problems?
         </h2>

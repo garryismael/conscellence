@@ -1,0 +1,19 @@
+@reference "tailwindcss";
+
+.hero-img-container {
+  @apply absolute -bottom-32 right-0 w-[213.13px] h-[319.7px] overflow-hidden rotate-[18.506deg];
+}
+
+.hero-img {
+    @apply object-cover w-[213px] h-[319px];
+}
+
+@media only screen and (max-width: 320px) {
+    .hero-img-container {
+        @apply -bottom-20 -right-2 w-44 h-64;
+    }
+
+    .hero-img{
+        @apply w-44 h-64;
+    }
+}
