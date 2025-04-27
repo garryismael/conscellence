@@ -18,18 +18,18 @@ const problems = [
 const Questions = () => {
   return (
     <section className="wrapper">
-      <div className="pt-24 pb-4">
+      <div className="pt-24">
         <h2 className="h2 text-center text-blue-gray-900">
           Are You Running Into These Problems?
         </h2>
         <div className="pt-10 grid grid-cols-1 gap-2">
-          {problems.map((service) => (
-            <div key={service.id} className="service-card">
+          {problems.map((question) => (
+            <div key={question.id} className="question-card">
               <span className="font-angry text-xl leading-[140%] text-primary">
-                {service.id}
+                {question.id}
               </span>
-              <h3 className="h3 text-blue-gray-900">{service.title}</h3>
-              <p className="text-l text-blue-gray-600">{service.text}</p>
+              <h3 className="h3 text-blue-gray-900">{question.title}</h3>
+              <p className="text-l text-blue-gray-600">{question.text}</p>
             </div>
           ))}
         </div>
