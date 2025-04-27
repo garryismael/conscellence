@@ -156,11 +156,11 @@
   }
 
   .btn-outline-primary {
-    @apply inline-flex justify-center items-center text-btn_l border gap-2 border-primary rounded-[48px] py-4 pr-6 pl-8 text-primary uppercase;
+    @apply inline-flex justify-center items-center text-btn_l border gap-2 border-primary rounded-[48px] py-4 pr-6 pl-8 text-primary uppercase ;
   }
 
   .btn-outline-primary:hover {
-    @apply bg-blue-gray-900 border-none text-white;
+    @apply bg-blue-gray-900 !border-blue-gray-900 text-white;
   }
 
   .btn-ghost {

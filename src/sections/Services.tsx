@@ -1,6 +1,12 @@
 import { ArrowDownRight, ArrowUpRight } from "lucide-react";
 
-const services = [
+interface Service {
+  id: number;
+  title: string;
+  text: string;
+}
+
+const services: Service[] = [
   {
     id: 1,
     title: "Customized Strategy Development",
@@ -38,7 +44,7 @@ const Services = () => {
               <p className="text-l">{service.text}</p>
             </div>
           ))}
-          <div className="px-6 py-10 bg-primary">
+          <div className="px-6 py-10 bg-primary rounded-b-[40px]">
             <h2 className="h2">Free consultation</h2>
             <button className="btn-outline-primary border-white text-white w-full mt-6">
               Schedule a free call
