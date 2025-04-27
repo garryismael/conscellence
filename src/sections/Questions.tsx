@@ -1,4 +1,4 @@
-const services = [
+const problems = [
   {
     id: "01",
     title: "Stagnant Growth?",
@@ -15,7 +15,7 @@ const services = [
     text: "Overcome market challenges with tailored strategies designed to position your business for success.",
   },
 ];
-const Services = () => {
+const Questions = () => {
   return (
     <section className="wrapper">
       <div className="pt-24 pb-4">
@@ -23,7 +23,7 @@ const Services = () => {
           Are You Running Into These Problems?
         </h2>
         <div className="pt-10 grid grid-cols-1 gap-2">
-          {services.map((service) => (
+          {problems.map((service) => (
             <div key={service.id} className="service-card">
               <span className="font-angry text-xl leading-[140%] text-primary">
                 {service.id}
@@ -38,4 +38,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Questions;

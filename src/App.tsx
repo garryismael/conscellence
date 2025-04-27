@@ -1,14 +1,14 @@
 import "./App.css";
 import Header from "./sections/Header";
 import Hero from "./sections/Hero";
-import Services from "./sections/Services";
+import Questions from "./sections/Questions";
 
 function App() {
   return (
     <>
       <Header />
       <Hero />
-      <Services />
+      <Questions />
     </>
   );
 }
