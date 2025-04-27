@@ -5,15 +5,15 @@
 }
 
 .hero-img {
-    @apply object-cover w-[213px] h-[319px];
+  @apply object-cover w-[213px] h-[319px];
 }
 
 @media only screen and (max-width: 320px) {
-    .hero-img-container {
-        @apply -bottom-20 -right-2 w-44 h-64;
-    }
+  .hero-img-container {
+    @apply -bottom-20 -right-2 w-44 h-64;
+  }
 
-    .hero-img{
-        @apply w-44 h-64;
-    }
+  .hero-img {
+    @apply w-44 h-64;
+  }
 }

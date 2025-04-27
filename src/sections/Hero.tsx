@@ -2,7 +2,7 @@ import { ArrowUpRight, Mail } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="wrapper bg-hero rounded-b-[40px]">
+    <section className="wrapper bg-hero rounded-b-[40px] overflow-x-clip">
       <div className="relative pt-36 pb-28">
         <div>
           <h1 className="h1">
