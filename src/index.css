@@ -1,0 +1,176 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@font-face {
+  font-family: "Angry";
+  src: url("/fonts/angry/Angry.woff2") format("woff2"), url("/fonts/angry/Angry.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+:root {
+  --primary: #0019ff;
+  --primary-light: #4a5cff;
+  --blue-gray-50: #f8fafc;
+  --blue-gray-200: #e2e8f0;
+  --blue-gray-300: #cbd5e1;
+  --blue-gray-400: #94a3b8;
+  --blue-gray-500: #64748b;
+  --blue-gray-600: #475569;
+  --blue-gray-800: #1e293b;
+  --blue-gray-900: #0f172a;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-blue-gray-50: var(--blue-gray-50);
+  --color-blue-gray-200: var(--blue-gray-200);
+  --color-blue-gray-300: var(--blue-gray-300);
+  --color-blue-gray-400: var(--blue-gray-400);
+  --color-blue-gray-500: var(--blue-gray-500);
+  --color-blue-gray-600: var(--blue-gray-600);
+  --color-blue-gray-800: var(--blue-gray-800);
+  --color-blue-gray-900: var(--blue-gray-900);
+  --font-montserrat: "Montserrat", "sans-serif";
+  --font-unbounded: "Unbounded", "sans-serif";
+  --font-angry: "Angry", "sans-serif";
+
+  /* Font Size Text */
+  --text-l: 18px;
+  --text-l--line-height: 140%;
+  --text-l--font-weight: 500;
+
+  --text-m: 16px;
+  --text-m--line-height: 140%;
+  --text-m--font-weight: 500;
+
+  --text-s: 14px;
+  --text-s--line-height: 140%;
+  --text-s--font-weight: 500;
+
+  --text-xs: 12px;
+  --text-xs--line-height: 120%;
+  --text-xs--font-weight: 500;
+
+  /* Font Size Button */
+  --text-btn_l: 16px;
+  --text-btn_l--line-height: 130%;
+  --text-btn_l--font-weight: 700;
+  --text-btn_l--text-transform: uppercase;
+
+  --text-btn_m: 14px;
+  --text-btn_m--line-height: 130%;
+  --text-btn_m--font-weight: 700;
+  --text-btn_m--text-transform: uppercase;
+
+  --text-btn_s: 12px;
+  --text-btn_s--line-height: 130%;
+  --text-btn_s--font-weight: 700;
+  --text-btn_s--text-transform: uppercase;
+
+  --text-btn_xs: 10px;
+  --text-btn_xs--line-height: 120%;
+  --text-btn_xs--font-weight: 700;
+  --text-btn_xs--text-transform: uppercase;
+
+  --background-image-hero: url("/hero-background.jpg");
+}
+
+@layer base {
+  body {
+    @apply font-montserrat overflow-x-hidden max-w-[1440px] mx-auto;
+  }
+
+  .h1_large {
+    @apply text-5xl lg:text-[64px] font-unbounded uppercase font-normal;
+  }
+
+  .h1 {
+    @apply text-[40px] leading-[120%] lg:text-[56px] lg:leading-[110%] font-unbounded;
+  }
+
+  .h2 {
+    @apply text-[32px] leading-[120%] lg:text-[40px] font-unbounded;
+  }
+
+  .h3 {
+    @apply text-2xl leading-9 font-bold;
+  }
+
+  .h4 {
+    @apply text-xl leading-[150%] font-bold;
+  }
+
+  .h5 {
+    @apply text-base leading-[140%] font-bold;
+  }
+
+  .sub1 {
+    @apply text-xl leading-[150%] font-medium;
+  }
+
+  .sub2 {
+    @apply text-lg leading-[150%] font-medium;
+  }
+
+  .wrapper {
+    @apply px-4;
+  }
+}
+
+@layer components {
+  .input-field {
+    @apply pr-6 pl-14 py-4 text-m rounded-[40px] bg-white border border-white outline-none;
+  }
+
+  .input-field::placeholder {
+    @apply text-xs text-blue-gray-500;
+  }
+
+  .input-field:hover {
+    @apply border-blue-gray-400 rounded-[40px];
+  }
+
+  .input-field:active {
+    @apply border-blue-gray-600 text-m text-blue-gray-800;
+  }
+
+  .input-field:not(:placeholder-shown) {
+    @apply text-blue-gray-800;
+  }
+
+  .input-field.error {
+    border-color: #e84946;
+    color: #e84946;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-4 bg-primary text-btn_l py-1.5 pr-2 pl-6 rounded-[80px] text-white border-none;
+  }
+
+  .btn-primary:hover {
+    @apply bg-primary-light;
+  }
+
+  .btn-outline-primary {
+    @apply inline-flex justify-center items-center text-btn_l border gap-2 border-primary rounded-[48px] py-4 pr-6 pl-8 text-primary border-none;
+  }
+
+  .btn-outline-primary:hover {
+    @apply bg-blue-gray-900 border-none text-white;
+  }
+
+  .btn-ghost {
+    @apply inline-flex justify-center items-center gap-2 rounded-[48px] text-blue-gray-900 py-4 pr-6 pl-6 text-btn_m border-none;
+  }
+
+  .btn-ghost:hover {
+    @apply text-primary;
+  }
+
+  .service-card {
+    @apply flex flex-col gap-2 p-6 border border-blue-gray-500 rounded-[40px];
+  }
+}
