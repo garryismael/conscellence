@@ -10,7 +10,7 @@
 
 .testimonial_h1 {
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--Blue-Gray-300, #cbd5e1);
+  -webkit-text-stroke-color: var(--blue-gray-300, #cbd5e1);
 }
 
 @media only screen and (max-width: 320px) {

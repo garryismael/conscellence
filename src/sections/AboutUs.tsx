@@ -8,11 +8,11 @@ const AboutUs = () => {
             src="/icons/arrow.svg"
             width={53}
             height={53}
-            className="size-[53px] ml-auto mr-6"
+            className="size-[53px] ml-auto mr-6 overflow-hidden"
           />
           <span className="col-span-2">Approach</span>
         </h1>
-        <div className="relative bg-white">
+        <div className="relative bg-white overflow-hidden">
           <img
             src="/3-removebg.png"
             width={620}
